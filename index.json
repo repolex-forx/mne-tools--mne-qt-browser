@@ -1,0 +1,11 @@
+{
+  "org": "mne-tools",
+  "repo": "mne-qt-browser",
+  "versions": [
+    {
+      "commit": "766a1bb946c7aa60d54f2093133acfd8dab9f5af",
+      "tag": "",
+      "parsed_at": "2026-11-08T06:46:26.542696+00:00"
+    }
+  ]
+}

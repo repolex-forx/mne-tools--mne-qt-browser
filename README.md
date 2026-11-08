@@ -1,1 +1,147 @@
-Initializing
+# Repolex Knowledge Graph of mne-tools/mne-qt-browser
+
+RDF knowledge graph data for [mne-tools/mne-qt-browser](https://github.com/mne-tools/mne-qt-browser), parsed by [repolex](https://repolex.ai).
+
+> **Note**: This data is experimental and subject to change without notice.
+
+## How to use this data
+
+The easiest way to get started is to install the [rlex](https://github.com/repolex-ai/rlex) query tool:
+
+```bash
+cargo install --git https://github.com/repolex-ai/rlex
+```
+
+Verify the install:
+
+```bash
+rlex --help
+```
+
+**rlex is designed to be used primarily by LLMs in a terminal.** Start up your favorite AI assistant and ask it to use rlex. It handles the SPARQL — you just ask questions in plain English.
+
+To load this repo's data:
+
+```bash
+rlex download mne-tools/mne-qt-browser
+```
+
+Consult `rlex --help` for other options, including SPARQL queries, HTTP server, and interactive visualization.
+
+## Data structure
+
+All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) (`.nq.gz`), a standard RDF format that can be loaded into any triplestore or graph database.
+
+```
+.
+├── aggregate
+│   ├── ast
+│   │   └── 766a1bb946c7aa60d54f2093133acfd8dab9f5af
+│   │       └── chunk-001.nq.gz
+│   └── repolex
+│       └── 766a1bb946c7aa60d54f2093133acfd8dab9f5af
+│           └── chunk-001.nq.gz
+├── blob
+│   ├── 0ea3d54851e98623a04b9ba99213c3c9a21e2f74.nq.gz
+│   ├── 21766828b2fd260897db748d64e6651eef597d5f.nq.gz
+│   ├── 28cc9338d0c47bf7378c14531fe28a8d50321d70.nq.gz
+│   ├── 29e7f77b7c84819068a5c9819ee06282952a2894.nq.gz
+│   ├── 2b2e774ff56874d87212d93ea8df232042d0be86.nq.gz
+│   ├── 2d8e7244748cd5a4430028cc67430b5994f82a4e.nq.gz
+│   ├── 2fda04213864ee446254645ef3c26a6f3ae048df.nq.gz
+│   ├── 3003c9dc893af8cd0f0ec1e9ae861973731dc392.nq.gz
+│   ├── 31e88351c0eb6d3107eb55c8290d30ae7ff74f50.nq.gz
+│   ├── 344bdfabf1e971de41f527177e9f7ed34aa82b52.nq.gz
+│   ├── 35d068a3d5cef471a2de8116c0ef05ed50b137de.nq.gz
+│   ├── 38dad7870ec4960238961d6155fdb5550c8aeec6.nq.gz
+│   ├── 3991a32fc16959d57d4db1d035096f4bb91541e7.nq.gz
+│   ├── 408f379cd31b55b4717ea896e0c8eb5bf1f2496d.nq.gz
+│   ├── 422b15f0498327464317d403a965a5fa5add12ca.nq.gz
+│   ├── 45273f0ac00276382347f6a4789660c20ac827cf.nq.gz
+│   ├── 503d497f418e5fda2ecec920bb8335ae8d8998b1.nq.gz
+│   ├── 51f4cf21ace75dbc9e6f1560449162575d65fae7.nq.gz
+│   ├── 55741d96d9ad42ef2779a3c08759af8cea7b3716.nq.gz
+│   ├── 55bfba86816d51b49c2d271d783994d4130db350.nq.gz
+│   ├── 58001e44035081fcdb7ce6fb9dedcd71bf9ded11.nq.gz
+│   ├── 5aec941220c73895224dfccdcbc6da661e2678c9.nq.gz
+│   ├── 6246c41f69a0bffdf8f77b03cba5c9d5bcc7935c.nq.gz
+│   ├── 6b153d7523c3998723e651583be750068524a471.nq.gz
+│   ├── 6d5cb2deedd056566d40a09c06bf60579558601f.nq.gz
+│   ├── 6dbe1b2df3ba1426a2b9a0961acfaa6786b35804.nq.gz
+│   ├── 6f5f53ed246a0007a2e6dc965268aaf4ef5a2979.nq.gz
+│   ├── 7300eb43a35649190f2887929ae9232bb773887f.nq.gz
+│   ├── 74ba6b7e143f8e792a85b742a7e9548872c7c48d.nq.gz
+│   ├── 769f89f0a441206123af731654be53fb1bb86af5.nq.gz
+│   ├── 79c33b29576b5106740ec37758c633281da75ea0.nq.gz
+│   ├── 7b0fc5c3c647ae9f1ca978a57cf08eeeb358b2a4.nq.gz
+│   ├── 7c5100942aae489ca04d07d2c69a4d8f6f8470fe.nq.gz
+│   ├── 7e07bdb42783dd746bc5ae2dd2f5eced4040415c.nq.gz
+│   ├── 7e5e726c8d5270d2a69dafad405a9b2ca1e50fe5.nq.gz
+│   ├── 80d22c77d9550de44ab9360df6bd1b48fd0d9fad.nq.gz
+│   ├── 84506bb41e2b4a79043fb3c2ca99abc815c3b2c6.nq.gz
+│   ├── 89ca0bf00cd2042f4f412c26a2e22697c6abcedc.nq.gz
+│   ├── 8d17dd7c140036d7ecbf15a275cd283f5898ea80.nq.gz
+│   ├── 8e7bcdc4c808bcf35b3ac31fbf8c0614ff199e89.nq.gz
+│   ├── 903b29d2c84961dde5f87d1679d397db9d078c0f.nq.gz
+│   ├── 9c2da53d09989213838c2fecfe8264dc2d481470.nq.gz
+│   ├── a1d541d03fea0706641459a4392317c9d147497d.nq.gz
+│   ├── a6408a9916b0e4332e31c24671582891e696238b.nq.gz
+│   ├── aaa9467b3dae40978102ff09f97989ab172ac69e.nq.gz
+│   ├── aab537925ee7356ef9de190069d049bcf92691b4.nq.gz
+│   ├── b465f32d5e4843d2594998f0fae7931aae7de783.nq.gz
+│   ├── b6e2632aff05a8e2dc988dc8663827e3408450ee.nq.gz
+│   ├── b9e108f2a50bad71f60d52d8fb798f9f0c54bff9.nq.gz
+│   ├── bd55648f4c58cfd0bae1486c4a9d17a657bb9f74.nq.gz
+│   ├── beebda57937700fcaa3cce891606e82500418947.nq.gz
+│   ├── bf9aebcd2d70127287b4fa30e6111ed56b69bb18.nq.gz
+│   ├── c451f9042ac9187ab3773a9532201accb85c8fd3.nq.gz
+│   ├── c470425ca5ddfab9044c30479ba23d475b4b4955.nq.gz
+│   ├── c62b35ab00d27cad07d615433ed26679b09ccdf7.nq.gz
+│   ├── c8f84ca71ff41ab55eeda4ceac27f58b939cf0ce.nq.gz
+│   ├── cae61e5e1818ae03c3c39148164a7750af441fd6.nq.gz
+│   ├── ccbd48b018c7374ae7811c8987a53b28e42adeb9.nq.gz
+│   ├── d3e887c33bd275a3255feea7f255a47febcecee1.nq.gz
+│   ├── e1a81fc8adccc507cc63fef63452d508122e3c40.nq.gz
+│   ├── e26442dbe541a71d1ef297f802c379274dd1f76e.nq.gz
+│   ├── e2b1badd2ed5426ce653e8cfd462083cca5a126f.nq.gz
+│   ├── e3d7ba2e183806131ff3c1cb0a5bd863f057ae9f.nq.gz
+│   ├── eaf9f276e82b5c64b8123fa0f7bb36afe2b8081f.nq.gz
+│   ├── f54915d4c1cfe4fb79b8e0f80f390bb9bf02e5a1.nq.gz
+│   ├── f783c72bc92dab4ac177537f1049620532dd9c08.nq.gz
+│   ├── fa8638c28716aa5d821f99431cd5e5005f72aeb3.nq.gz
+│   └── fd2f86ce23c2625f8ea2fa180cac8af3cfd32177.nq.gz
+├── branch
+│   └── branch.nq.gz
+├── commit
+│   └── commit.nq.gz
+├── filetree
+│   └── 766a1bb946c7aa60d54f2093133acfd8dab9f5af.nq.gz
+├── issue
+│   └── issue.nq.gz
+├── pr
+│   └── pr.nq.gz
+└── tag
+    └── tag.nq.gz
+
+13 directories, 76 files
+```
+
+| Directory | What it contains |
+|-----------|-----------------|
+| `blob/` | Per-file AST graphs, content-addressed by git blob SHA. Each file in the source repo gets its own graph. |
+| `aggregate/ast/` | Combined AST graph per parsed commit. Merges all blob graphs for a snapshot of the entire codebase at that point. |
+| `aggregate/lsp/` | Language Server Protocol enrichment: resolved symbols, definitions, references, and type information. |
+| `aggregate/dataflow/` | Interprocedural data flow edges between functions and modules. |
+| `aggregate/repolex/` | Combined graph (AST + LSP + dataflow) per commit. |
+| `commit/` | Git commit metadata (author, date, message, parent links). |
+| `branch/` | Branch metadata. |
+| `tag/` | Tag metadata. |
+| `filetree/` | File tree snapshots per commit (which files existed and their blob SHAs). |
+| `audit/` | Code architecture and graph audit reports per commit. |
+
+## Source repository
+
+[mne-tools/mne-qt-browser](https://github.com/mne-tools/mne-qt-browser)
+
+---
+*Parsed on 2026-11-08 by [repolex](https://repolex.ai)*
