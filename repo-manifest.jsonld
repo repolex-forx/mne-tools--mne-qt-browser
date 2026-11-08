@@ -8,7 +8,8 @@
     {
       "@id": "https://repolex.ai/r/mne-tools/mne-qt-browser/commit/766a1bb946c7aa60d54f2093133acfd8dab9f5af",
       "git:hexsha": "766a1bb946c7aa60d54f2093133acfd8dab9f5af",
-      "repolex:parseStatus": "ast_complete"
+      "repolex:parseStatus": "parsed",
+      "repolex:parsedAt": "2026-11-08T06:46:26.447295+00:00"
     },
     {
       "@id": "https://repolex.ai/r/mne-tools/mne-qt-browser/commit/d48e13bd309d08f6a26e7333c1dd2c819d8c601e",
